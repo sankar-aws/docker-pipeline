@@ -1,5 +1,5 @@
 version: '3.8'
-services:
+Services:
   mini:
     image: sankardevops02/miniprod:latest
     ports:
