@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  mini:
+    image: sankardevops02/miniprod:latest
+    ports:
+      - "81:80"
+    deploy:
+      - replicas: 3
+  max:
+    image: sankardevops02/maxprod:latest
+    ports:
+      - "82:80"
+    deploy:
+      - replicas: 3
+  promax:
+    image: sankardevops02/promaxprod:latest
+    ports:
+      - "83:80"
+    deploy:
+      - replicas: 3
